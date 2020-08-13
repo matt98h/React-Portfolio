@@ -1,8 +1,12 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 
+import brewloc from '../assets/images/Brewery_search.PNG'
+import noteTaker from '../assets/images/note-taker.PNG'
+import randomPass from '../assets/images/Random_password_generator.PNG'
+import surfnMW from '../assets/images/surfn midwest.PNG'
+import workday from '../assets/images/Workday_scheduler.PNG'
 
 import Card from '../components/Card'
 class Carousel extends React.Component {
@@ -14,7 +18,7 @@ class Carousel extends React.Component {
                     id: 0,
                     title: `Surfn' Midwest`,
                     subTitle: 'The premiere Midwest surfing Application',
-                    // imgSrc: add images into an assets folder,
+                    imgSrc: surfnMW,
                     // link: 'project link',
                     selected: false
                 },
@@ -22,7 +26,7 @@ class Carousel extends React.Component {
                     id: 1,
                     title: `BrewLoc`,
                     subTitle: 'Application that finds breweries near you!',
-                    // imgSrc: add images into an assets folder,
+                    imgSrc: brewloc,
                     // link: 'project link',
                     selected: false
                 },
@@ -30,7 +34,7 @@ class Carousel extends React.Component {
                     id: 2,
                     title: `Random Password Generator`,
                     subTitle: 'An application that Randomly generates a password off of given specifications',
-                    // imgSrc: add images into an assets folder,
+                    imgSrc: randomPass,
                     // link: 'project link',
                     selected: false
                 },
@@ -38,7 +42,7 @@ class Carousel extends React.Component {
                     id: 3,
                     title: `Workday Scheduler`,
                     subTitle: 'An application that helps you keep your notes organized',
-                    // imgSrc: add images into an assets folder,
+                    imgSrc: workday,
                     // link: 'project link',
                     selected: false
                 },
@@ -46,7 +50,7 @@ class Carousel extends React.Component {
                     id: 4,
                     title: `Note taker application`,
                     subTitle: 'An application that helps you keep your notes organized',
-                    // imgSrc: add images into an assets folder,
+                    imgSrc: noteTaker,
                     // link: 'project link',
                     selected: false
                 }
@@ -72,7 +76,7 @@ class Carousel extends React.Component {
 
     makeItems =(items) => {
         return items.map(item => {
-            return<Card item={item} onClick={(e => this.handleCardClick(item.id, e))}key={item.id} />
+            return<Card item={item} click={(e => this.handleCardClick(item.id, e))}key={item.id} />
         })
     }
     render() {

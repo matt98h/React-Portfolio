@@ -4,9 +4,9 @@ import {useSpring, animated} from 'react-spring';
 function CardInfo(props) {
     const style = useSpring({opacity: 1, from: {opacity: 0}})
     return(
-        <animated.div className='' style={style}>
-            <p>{props.title}</p>
-            <p>{props.subTitle}</p>
+        <animated.div className='m-card-info' style={style}>
+            <p className='m-card-title'>{props.title}</p>
+            <p className='m-card-sub-title'>{props.subTitle}</p>
             <a href={props.link} target='_blank' rel='noopener noreferrer'></a>
         </animated.div>
     );
