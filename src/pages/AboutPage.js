@@ -9,7 +9,7 @@ return(
     <Hero title={props.title}/>
 
     <Content>
-
+Hello this works
     </Content>
 </div>
 

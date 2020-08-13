@@ -35,3 +35,11 @@ g.card-info{
   margin:0px;
 }
 
+.success-msg {
+  color: #6cad63;
+  padding: 10px 15px;
+}
+.err-msg {
+  color: #d42828;
+  padding: 10px 15px;
+}
